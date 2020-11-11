@@ -1,0 +1,105 @@
+<p>docker-compose works!</p>
+
+<p>
+  <mat-form-field class="example-form-field">
+    <mat-label>version</mat-label>
+    <input matInput type="text" value={{version}}>
+  </mat-form-field>
+</p>
+
+<p>
+  <mat-form-field>
+    <mat-label>service name</mat-label>
+    <input matInput type="text" value={{serviceName}}>
+  </mat-form-field>
+</p>
+
+<p>
+  <mat-form-field>
+    <mat-label>base image</mat-label>
+    <input matInput type="text" value={{image}}>
+  </mat-form-field>
+</p>
+
+<p>
+  <mat-form-field>
+    <mat-label>build context</mat-label>
+    <input matInput type="text" value={{buildContext}}>
+  </mat-form-field>
+</p>
+
+<p>
+  <mat-form-field>
+    <mat-label>build docker file</mat-label>
+    <input matInput type="text" value={{buildDockerFile}}>
+  </mat-form-field>
+</p>
+
+
+<label>build args</label>
+<ul *ngFor="let buildArg of buildArgs">
+  <li>
+    <mat-form-field>
+      <mat-label>build arg</mat-label>
+      <input matInput type="text" value={{buildArg}}>
+    </mat-form-field>
+  </li>
+</ul>
+
+<p>
+  <mat-form-field>
+    <mat-label>container name</mat-label>
+    <input matInput type="text" value={{containerName}}>
+  </mat-form-field>
+</p>
+
+<p>
+  <mat-form-field>
+    <mat-label>restart policy</mat-label>
+    <input matInput type="text" value={{restartPolicy}}>
+  </mat-form-field>
+</p>
+
+<label>environment variables</label>
+<ul *ngFor="let environmentVariable of environmentVariables">
+  <li>
+    <mat-form-field>
+      <mat-label>environment variable</mat-label>
+      <input matInput type="text" value={{environmentVariable}}>
+    </mat-form-field>
+  </li>
+</ul>
+
+<label>ports</label>
+<ul *ngFor="let port of ports">
+  <li>
+    <mat-form-field>
+      <mat-label>port</mat-label>
+      <input matInput type="text" value={{port}}>
+    </mat-form-field>
+  </li>
+</ul>
+
+<label>volumes</label>
+<ul *ngFor="let volume of volumes">
+  <li>
+    <mat-form-field>
+      <mat-label>volume</mat-label>
+      <input matInput type="text" value={{volume}}>
+    </mat-form-field>
+  </li>
+</ul>
+
+<p>
+  <mat-form-field>
+    <mat-label>working directory</mat-label>
+    <input matInput type="text" value={{workingDirectory}}>
+  </mat-form-field>
+</p>
+
+<p>
+  <mat-form-field>
+    <mat-label>entrypoint</mat-label>
+    <input matInput type="text" value={{entrypoint}}>
+  </mat-form-field>
+</p>
